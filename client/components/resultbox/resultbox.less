@@ -1,0 +1,189 @@
+.resultaat{
+  background-color: rgba(255, 255, 255, 0.9);
+  float: left;
+  width: 100%;
+}
+
+.cardata{
+  padding: 35px 0 25px 0;
+  float: left;
+  width: 100%;
+  &__yourcar{
+    text-align: center;
+  }
+  &__title{
+    font-weight: bold;
+    font-size: 28px;
+    margin: 10px 0;
+  }
+  &__subtitle{
+    font-size: 16px;
+    font-weight: bold;
+  }
+  &__detail{
+    display:inline-block;
+    position: relative;
+    padding: 6px 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    text-align: center;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius:3px;
+    -webkit-box-shadow: inset 0px 2px 5px 0px rgba(0,0,0,0.41);
+    -moz-box-shadow: inset 0px 2px 5px 0px rgba(0,0,0,0.41);
+    box-shadow: inset 0px 2px 5px 0px rgba(0,0,0,0.41);
+    width: 150px;
+    float: left;
+  }
+  &__license{
+    float: left;
+    padding-top: 8px;
+    margin-right: 10px;
+  }
+  &__mileage{
+    float: left;
+    padding-top: 8px;
+    margin-right: 10px;
+  }
+  &__again{
+    display: block;
+  }
+}
+
+.carprice{
+  &__title{
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    @media (min-width:@screen-sm){
+      text-align: center;
+    }
+  }
+  &__price{
+    font-size: 31px;
+    font-weight: bold;
+    color: #21479c;
+    text-align: center;
+  }
+}
+
+.facts{
+  float: left;
+  background-color: white;
+  margin-top: 1px;
+  width: 100%;
+  margin-bottom: 40px;
+  padding: 20px;
+  &__fact{
+    font-size: 20px;
+    color: #36337a;
+    padding: 7px 0 7px 46px;
+    background-repeat: no-repeat;
+    -webkit-background-size: 30px;
+    background-size: 30px;
+    &--model{
+      background-image: url('/assets/images/icon-fact-eye.png');
+      background-position: 3px 12px;
+    }
+    &--average{
+      background-image: url('/assets/images/icon-fact-clock.png');
+      background-position: 4px 2px;
+      background-size: 26px;
+    }
+    &--brand{
+      background-image: url('/assets/images/icon-fact-car.png');
+      background-position: 3px 10px;
+    }
+    &--price{
+      background-image: url('/assets/images/icon-fact-money-light.png');
+      background-position: 3px 13px;
+    }
+
+    strong {
+      font-weight: bold;
+    }
+  }
+}
+
+.resultbox {
+  &-details {
+    background-color: rgba(255, 255, 255, 0.9);
+
+    &__license {
+      text-align: center;
+      padding: 10px 0;
+    }
+    &__data{
+      @media(min-width: @screen-sm){
+        padding: 55px 0 10px;
+      }
+      padding: 0 0 10px;
+      text-align: center;
+      table {
+        display: inline-block;
+        th,td{
+          text-align: left;
+        }
+      }
+    }
+
+    &__title{
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      padding:7px 0 5px;
+    }
+    &__label{
+      display:inline-block;
+      width: 70px;
+      height: 35px;
+    }
+    &__field{
+      display:inline-block;
+      width: 150px;
+      height: 35px;
+      position: relative;
+      font-size: 16px;
+      box-sizing: border-box;
+      text-align: center;
+      padding-top: 3px;
+      -webkit-box-shadow: inset 0px 2px 5px 0px rgba(0,0,0,0.41);
+      -moz-box-shadow: inset 0px 2px 5px 0px rgba(0,0,0,0.41);
+      box-shadow: inset 0px 2px 5px 0px rgba(0,0,0,0.41);
+    }
+  }
+  &-statistics{
+
+    &__button{
+      position: relative;
+      padding-top: 99px;
+      text-align: center;
+    }
+
+    &__callout{
+      position: absolute;
+      display: block;
+      background-image: url(/assets/images/statistics-callout.png);
+      width: 193px;
+      height: 43px;
+      left: 20px;
+      @media(min-width: @screen-sm) {
+        left: 0;
+      }
+      top: 31px;
+    }
+    &__arrow{
+      position: absolute;
+      display: block;
+      background-image: url(/assets/images/statistics-arrow.png);
+      width: 85px;
+      height: 60px;
+      left: 210px;
+      @media(min-width: @screen-sm) {
+        left: 190px;
+      }
+      top: 31px;
+    }
+  }
+}

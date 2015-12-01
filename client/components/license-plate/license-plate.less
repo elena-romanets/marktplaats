@@ -1,0 +1,34 @@
+.license-plate {
+  display: inline-block;
+  background-image: url('/assets/images/license-plate-s.png');
+  width: 221px;
+  height: 52px;
+  position: relative;
+  @media (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi) {
+    background-image: url('/assets/images/license-plate-l.png');
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+  &:focus {
+    outline: 0;
+  }
+  &__input {
+    position: absolute;
+    background: none;
+    border: none;
+    top: 0px;
+    width: 181px;
+    height: 50px;
+    left: 37px;
+    text-align: center;
+    font-size: 37px;
+    text-transform: uppercase;
+    text-wrap: none;
+    padding: 0;
+    margin: 0;
+    &:focus {
+      outline: 0;
+    }
+  }
+}

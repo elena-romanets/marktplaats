@@ -1,0 +1,72 @@
+.searchbox{}
+.searchbox-facts{
+  height: 100%;
+}
+.searchbox-fact{
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin-left: -15px;
+  margin-right: -14px;
+  padding: 15px;
+  text-align: center;
+  :first-child > &{
+    margin-left: 0;
+  }
+  :last-child > &{
+    margin-right: 0;
+  }
+
+  &__icon{
+    width: 61px;
+    height: 47px;
+    display: inline-block;
+    background-position: center center;
+    background-repeat: no-repeat;
+    &--1{
+      background-image: url(/assets/images/icon-fact-people.png);
+      background-size: 45px;
+    }
+    &--2{
+      background-image: url(/assets/images/icon-fact-money.png);
+      background-size: 61px;
+    }
+    &--3{
+      background-image: url(/assets/images/icon-fact-handshake.png);
+      background-size: 61px;
+    }
+  }
+  &__text{
+    color: #36337a;
+  }
+}
+.searchbox-form{
+  margin-top: 1px;
+  background-color: #fff;
+  text-align: center;
+  padding: 30px;
+  &__label{
+    padding-bottom: 5px;
+  }
+  &__title{
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 15px;
+  }
+  &__license{
+    padding-bottom: 15px;
+  }
+  &__error{
+    color: red;
+  }
+}
+.mileage__input {
+  border: 3px solid #333748;
+  border-radius: 5px;
+  margin-bottom: 2em;
+  padding: 5px;
+  text-align: center;
+  font-weight: bold;
+  &:focus {
+    outline: 0;
+  }
+}

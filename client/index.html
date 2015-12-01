@@ -1,0 +1,120 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <base href="./">
+    <title>Je auto verkopen? Het begint op Marktplaats.</title>
+    <meta name="ProjectName" content="marktplaats.car_retargeting"/>
+    <meta name="ProjectBuild" content="12-06-2015 09:15"/>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(client) app/vendor.css -->
+      <!-- bower:css -->
+      <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css({.tmp,client}) app/app.css -->
+    <link rel="stylesheet" href="app/app.css">
+      <!-- injector:css -->
+      <!-- endinjector -->
+    <!-- endbuild -->
+
+  </head>
+  <body ng-app="marktplaatsIacVerkoopApp">
+    <!-- Google Tag Manager, replace GTM-XXXXX with your container ID -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NLZDWP"
+                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NLZDWP');</script>
+    <!-- End Google Tag Manager -->
+
+    <!--[if lte IE 9]>
+    <script type="text/javascript">
+      location.assign('https://marktplaats.nl');
+    </script>
+    <![endif]-->
+
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <div ui-view=""></div>
+
+    <script src="http://www.youtube.com/player_api"></script>
+    <!--[if lt IE 9]>
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <script src="bower_components/json3/lib/json3.min.js"></script>
+    <![endif]-->
+    <!-- build:js({client,node_modules}) app/vendor.js -->
+      <!-- bower:js -->
+      <script src="bower_components/jquery/dist/jquery.js"></script>
+      <script src="bower_components/angular/angular.js"></script>
+      <script src="bower_components/angular-resource/angular-resource.js"></script>
+      <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+      <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+      <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+      <script src="bower_components/lodash/dist/lodash.compat.js"></script>
+      <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+      <script src="bower_components/angular-youtube-mb/src/angular-youtube-embed.js"></script>
+      <script src="bower_components/waypoints/waypoints.js"></script>
+      <script src="bower_components/SHA-1/sha1.js"></script>
+      <script src="bower_components/angulartics/src/angulartics.js"></script>
+      <script src="bower_components/angulartics/src/angulartics-adobe.js"></script>
+      <script src="bower_components/angulartics/src/angulartics-chartbeat.js"></script>
+      <script src="bower_components/angulartics/src/angulartics-cnzz.js"></script>
+      <script src="bower_components/angulartics/src/angulartics-flurry.js"></script>
+      <script src="bower_components/angulartics/src/angulartics-ga-cordova.js"></script>
+      <script src="bower_components/angulartics/src/angulartics-ga.js"></script>
+      <script src="bower_components/angulartics/src/angulartics-gtm.js"></script>
+      <script src="bower_components/angulartics/src/angulartics-kissmetrics.js"></script>
+      <script src="bower_components/angulartics/src/angulartics-mixpanel.js"></script>
+      <script src="bower_components/angulartics/src/angulartics-piwik.js"></script>
+      <script src="bower_components/angulartics/src/angulartics-scroll.js"></script>
+      <script src="bower_components/angulartics/src/angulartics-segmentio.js"></script>
+      <script src="bower_components/angulartics/src/angulartics-splunk.js"></script>
+      <script src="bower_components/angulartics/src/angulartics-woopra.js"></script>
+      <script src="bower_components/angulartics/src/angulartics-marketo.js"></script>
+      <script src="bower_components/angulartics/src/angulartics-intercom.js"></script>
+      <script src="bower_components/angular-equalizer/angular-equalizer.js"></script>
+      <!-- endbower -->
+    <script src="bower_components/angulartics/src/angulartics-debug.js"></script>
+    <script src=""></script>
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,client}) app/app.js -->
+        <script src="app/app.js"></script>
+          <!-- injector:js -->
+          <script src="app/main/home/home.controller.js"></script>
+          <script src="app/main/home/home.js"></script>
+          <script src="app/main/main.controller.js"></script>
+          <script src="app/main/main.js"></script>
+          <script src="app/main/search/search.controller.js"></script>
+          <script src="app/main/search/search.js"></script>
+          <script src="components/carInformation/carInformation.service.js"></script>
+          <script src="components/checkVehicle/checkVehicle.service.js"></script>
+          <script src="components/checkVehiclePrice/checkVehiclePrice.service.js"></script>
+          <script src="components/footer/footer.directive.js"></script>
+          <script src="components/gtm/angulartics-gtm.js"></script>
+          <script src="components/header/header.directive.js"></script>
+          <script src="components/jumbo/jumbo.directive.js"></script>
+          <script src="components/license-plate/license-plate.directive.js"></script>
+          <script src="components/mp-button/mp-button.directive.js"></script>
+          <script src="components/panel/panel.directive.js"></script>
+          <script src="components/resultbox/resultbox.directive.js"></script>
+          <script src="components/searchbox/searchbox.directive.js"></script>
+          <script src="components/selligent/selligent.service.js"></script>
+          <script src="components/selligent/sellingent.directive.js"></script>
+          <script src="components/tips-item/tips-item.directive.js"></script>
+          <script src="components/tips/tips.directive.js"></script>
+          <!-- endinjector -->
+        <!-- endbuild -->
+</body>
+</html>

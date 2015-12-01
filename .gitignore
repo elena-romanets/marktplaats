@@ -5,3 +5,17 @@ public
 client/bower_components
 dist
 /server/config/local.env.js
+
+# osx metadata
+.DS_Store
+
+# build cache
+.tscache
+.sass-cache
+
+# sourcemaps
+*.css.map
+*.js.map
+
+# Coverage directory used by tools like istanbul
+coverage

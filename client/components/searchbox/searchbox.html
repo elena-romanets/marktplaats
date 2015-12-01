@@ -1,0 +1,41 @@
+<div class="searchbox">
+  <div class="row searchbox-facts">
+    <div class="col-xs-4">
+      <div class="searchbox-fact" equalizer="fact">
+        <div class="searchbox-fact__icon searchbox-fact__icon--1"></div>
+        <div class="searchbox-fact__text"><strong>1 miljoen</strong> unieke <br class="hidden-xs"/> bezoekers per maand</div>
+      </div>
+    </div>
+    <div class="col-xs-4">
+      <div class="searchbox-fact" equalizer="fact">
+        <div class="searchbox-fact__icon searchbox-fact__icon--2"></div>
+        <div class="searchbox-fact__text"><strong>50%</strong> krijgt een goed bod <br class="hidden-xs"/>binnen <strong>3 dagen</strong></div>
+      </div>
+    </div>
+    <div class="col-xs-4">
+      <div class="searchbox-fact" equalizer="fact">
+        <div class="searchbox-fact__icon searchbox-fact__icon--3"></div>
+        <div class="searchbox-fact__text"><strong>30%</strong> zelfs <br class="hidden-xs"/>binnen <strong>1 dag!</strong></div>
+      </div>
+    </div>
+  </div>
+  <form class="searchbox-form" ng-submit="submitLicense(license)">
+    <div class="searchbox-form__title">Ontdek hoe snel je auto verkoopt.</div>
+    <div class="searchbox-form__label">Vul je kenteken in</div>
+    <div class="searchbox-form__license">
+      <license-plate ng-model="license" editable="true"></license-plate>
+      <div><a href="http://www.marktplaats.nl/c/auto-s/c91.html" class="searchbox-form__msg" target="_blank">Ik heb mijn kenteken niet bij de hand.</a></div>
+      <div class="searchbox-form__error" ng-show="hasErrors">Geen auto gevonden met het bovenstaande kenteken.</div>
+    </div>
+
+    <div class="searchbox-form__label">Vul je kilometerstand in</div>
+    <div class="searchbox-form__mileage">
+      <input type="text" class="mileage__input" placeholder="Bijv. 15000" ng-model="mileage" editable="true"/>
+    </div>
+
+    <div class="searchbox-form__button">
+      <mp-button ng-click="submitLicense(license, mileage)">Ontdek het nu</mp-button>
+    </div>
+  </form>
+
+</div>
