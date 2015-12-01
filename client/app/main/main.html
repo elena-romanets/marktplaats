@@ -2,12 +2,21 @@
 <jumbo show-overlay="carInformation.data">
   <div class="container">
     <div class="row">
-      <div ng-class="{ 'col-sm-12': carInformation.data, 'col-sm-10': !carInformation.data, 'col-sm-push-1': !carInformation.data, 'col-md-8': !carInformation.data,'col-md-push-2': !carInformation.data}">
-        <panel title="Je auto verkopen? <strong>Het begint op Marktplaats.</strong>">
+      <div ng-class="{ 'col-sm-12': carInformation.data }">
+        <panel class="header-panel">
           <ui-view></ui-view>
         </panel>
-        <panel title="Verkooptips van onze experts" ng-show="carInformation.data">
+        <panel title="Het geheim van een goede auto-advertentie">
+          <tips-first></tips-first>
+        </panel>
+        <panel title="Verkooptips van onze experts">
           <tips></tips>
+        </panel>
+        <panel title="">
+          <news></news>
+        </panel>
+        <panel title="Ontdek hoe andere gebruikers hun auto succesvol verkochten">
+          <sold-cars></sold-cars>
         </panel>
       </div>
     </div>

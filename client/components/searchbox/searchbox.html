@@ -1,41 +1,49 @@
 <div class="searchbox">
   <div class="row searchbox-facts">
-    <div class="col-xs-4">
-      <div class="searchbox-fact" equalizer="fact">
-        <div class="searchbox-fact__icon searchbox-fact__icon--1"></div>
-        <div class="searchbox-fact__text"><strong>1 miljoen</strong> unieke <br class="hidden-xs"/> bezoekers per maand</div>
-      </div>
-    </div>
-    <div class="col-xs-4">
-      <div class="searchbox-fact" equalizer="fact">
-        <div class="searchbox-fact__icon searchbox-fact__icon--2"></div>
-        <div class="searchbox-fact__text"><strong>50%</strong> krijgt een goed bod <br class="hidden-xs"/>binnen <strong>3 dagen</strong></div>
-      </div>
-    </div>
-    <div class="col-xs-4">
-      <div class="searchbox-fact" equalizer="fact">
-        <div class="searchbox-fact__icon searchbox-fact__icon--3"></div>
-        <div class="searchbox-fact__text"><strong>30%</strong> zelfs <br class="hidden-xs"/>binnen <strong>1 dag!</strong></div>
-      </div>
-    </div>
+    <h1>Je auto verkopen? Ontdek de waarde van je auto.</h1>>
+    <p>Bereken eenvoudig de waarde van je auto en plaats vervolgens je auto advertentie binnen 2 minuten. Ontdekt hoe vergelijkbare auto's gemiddeld verkocht worden op Marktplaats.
+      Je auto verkopen? Het begint op Marktplaats.</p>
   </div>
   <form class="searchbox-form" ng-submit="submitLicense(license)">
-    <div class="searchbox-form__title">Ontdek hoe snel je auto verkoopt.</div>
-    <div class="searchbox-form__label">Vul je kenteken in</div>
+    <div class="searchbox-form__label">Kenteken</div>
     <div class="searchbox-form__license">
       <license-plate ng-model="license" editable="true"></license-plate>
-      <div><a href="http://www.marktplaats.nl/c/auto-s/c91.html" class="searchbox-form__msg" target="_blank">Ik heb mijn kenteken niet bij de hand.</a></div>
+      <div><a href="http://www.marktplaats.nl/c/auto-s/c91.html" class="searchbox-form__msg" target="_blank">Of plaats je auto direct op Marktplaats</a></div>
       <div class="searchbox-form__error" ng-show="hasErrors">Geen auto gevonden met het bovenstaande kenteken.</div>
     </div>
 
-    <div class="searchbox-form__label">Vul je kilometerstand in</div>
+    <div class="searchbox-form__label">Kilometers (optioneel)</div>
     <div class="searchbox-form__mileage">
       <input type="text" class="mileage__input" placeholder="Bijv. 15000" ng-model="mileage" editable="true"/>
     </div>
 
     <div class="searchbox-form__button">
-      <mp-button ng-click="submitLicense(license, mileage)">Ontdek het nu</mp-button>
+      <mp-button ng-click="submitLicense(license, mileage)">Bereken waarde</mp-button>
+    </div>
+
+    <div class="searchbox-form__link">
+      <div><a href="http://www.marktplaats.nl/c/auto-s/c91.html" class="searchbox-form__msg" target="_blank">Of plaats je auto direct op Marktplaats</a></div>
     </div>
   </form>
 
+  <div class="row searchbox-facts">
+    <div class="col-xs-4">
+      <div class="searchbox-fact" equalizer="fact">
+        <div class="searchbox-fact__icon"></div>
+        <div class="searchbox-fact__text">1 miljoen unieke bezoekers per maand</div>
+      </div>
+    </div>
+    <div class="col-xs-4">
+      <div class="searchbox-fact" equalizer="fact">
+        <div class="searchbox-fact__icon"></div>
+        <div class="searchbox-fact__text">50% krijgt een goed bod binnen 3 dagen</div>
+      </div>
+    </div>
+    <div class="col-xs-4">
+      <div class="searchbox-fact" equalizer="fact">
+        <div class="searchbox-fact__icon"></div>
+        <div class="searchbox-fact__text">30% verkoopt de auto zelfs binnen 1 dag! </div>
+      </div>
+    </div>
+  </div>
 </div>
