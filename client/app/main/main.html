@@ -1,15 +1,17 @@
 <header></header>
 <jumbo show-overlay="carInformation.data">
-  <div class="container">
+  <div class="container-main">
     <div class="row">
       <div ng-class="{ 'col-sm-12': carInformation.data }">
         <panel class="header-panel">
           <ui-view></ui-view>
         </panel>
-        <panel title="Het geheim van een goede auto-advertentie">
+
+        <panel title="Het geheim van een goede auto-advertentie" class="panel-tips-first">
           <tips-first></tips-first>
         </panel>
-        <panel title="Verkooptips van onze experts">
+
+        <panel title="Verkooptips van onze experts" class="panel-tips">
           <tips></tips>
         </panel>
         <panel title="">

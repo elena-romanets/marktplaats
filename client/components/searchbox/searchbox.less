@@ -1,8 +1,54 @@
-.searchbox{}
+.searchbox {
+
+  padding-top: 47px;
+
+  h1,
+  p, a {
+    color: #FFFFFF;
+    text-align: center;
+  }
+
+  p {
+    min-width: 700px;
+    width: 700px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  .searchbox-form__label {
+    color: #FFFFFF;
+    text-align: left;
+  }
+
+  input {
+    height: 50px;
+  }
+
+  .searchbox-form__license,
+  .searchbox-form__mileage,
+  .searchbox-form__button {
+    display: inline-block;
+    margin-right: 27px;
+
+    &:first-child {
+      position: relative;
+      top: 21px;
+    }
+  }
+}
+
 .searchbox-facts{
   height: 100%;
+
+  &.container {
+    margin: 0 auto;
+  }
 }
-.searchbox-fact{
+.searchbox-fact {
   height: 100%;
   margin-left: -15px;
   margin-right: -14px;
@@ -16,26 +62,14 @@
   }
 
   &__icon{
-    width: 61px;
-    height: 47px;
+    width: 27px;
+    height: 22px;
+    position: relative;
     display: inline-block;
-    background-position: center center;
-    background-repeat: no-repeat;
-    &--1{
-      background-image: url(/assets/images/icon-fact-people.png);
-      background-size: 45px;
-    }
-    &--2{
-      background-image: url(/assets/images/icon-fact-money.png);
-      background-size: 61px;
-    }
-    &--3{
-      background-image: url(/assets/images/icon-fact-handshake.png);
-      background-size: 61px;
-    }
+    background: url("/assets/images/icon-fact-teek.png") center no-repeat;
   }
   &__text{
-    color: #36337a;
+    color: #FFF;
   }
 }
 .searchbox-form{
