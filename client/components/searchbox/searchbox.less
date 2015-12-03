@@ -13,6 +13,11 @@
     width: 700px;
     text-align: center;
     margin: 0 auto;
+
+    @media (max-width: 768px) {
+      min-width: auto;
+      width: auto;
+    }
   }
 
   a {
@@ -33,6 +38,10 @@
     overflow: hidden;
     width: 670px;
     margin: 0 auto;
+
+    @media (max-width: 768px) {
+      width: auto;
+    }
   }
 
   .searchbox-form__button {
@@ -55,6 +64,15 @@
 
     &:first-child {
       margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      float: none;
+      margin: 0 auto;
+
+      &:first-child {
+        margin: 0 auto;
+      }
     }
   }
 }
@@ -144,7 +162,31 @@
   width: 100%;
   height: 863px;
 
+  @media (max-width: 990px) {
+    height: 1000px;
+  }
+
+  @media (max-width: 768px) {
+    height: 1217px;
+  }
+
+  @media (max-width: 560px) {
+    height: 1250px;
+  }
+
+  @media (max-width: 480px) {
+    height: 1400px;
+  }
+
   &.home {
     height: 525px;
+
+    @media (max-width: 768px) {
+      height: 780px;
+    }
+
+    @media (max-width: 500px) {
+      height: 840px;
+    }
   }
 }
