@@ -1,90 +1,3 @@
-<!--<section class="resultbox">-->
-  <!--<div class="resultbox-details">-->
-    <!--<div class="row">-->
-      <!--<div class="col-sm-4 col-sm-push-3">-->
-        <!--<div class="resultbox-details__license">-->
-          <!--<h3 class="cardata__title">Jouw auto:</h3>-->
-          <!--<license-plate ng-model="result.licensePlate" editable="false"></license-plate>-->
-          <!--<a ui-sref="main.home" class="cardata__again">Ander kenteken</a>-->
-        <!--</div>-->
-      <!--</div>-->
-      <!--<div class="col-sm-4  col-sm-push-3">-->
-        <!--<div class="resultbox-details__data">-->
-          <!--<table>-->
-            <!--<tr>-->
-              <!--<th width="100">Merk</th>-->
-              <!--<td>{{result.brand}}</td>-->
-            <!--</tr>-->
-            <!--<tr>-->
-              <!--<th>Model</th>-->
-              <!--<td>{{result.model}}</td>-->
-            <!--</tr>-->
-            <!--<tr>-->
-              <!--<th>Bouwjaar</th>-->
-              <!--<td>{{result.year}}</td>-->
-            <!--</tr>-->
-          <!--</table>-->
-        <!--</div>-->
-      <!--</div>-->
-    <!--</div>-->
-  <!--</div>-->
-<!--</section>-->
-
-<!--<section class="facts">-->
-  <!--<div class="row">-->
-    <!--<div class="col-xs-12">-->
-      <!--<div class="row">-->
-        <!--<div class="col-sm-7">-->
-
-          <!--<div class="facts__fact facts__fact&#45;&#45;price">-->
-
-            <!--De gemiddelde vraagprijs is <strong class="no-wrap">-->
-            <!--<span ng-show="result.averagePrice === 0">onbekend</span>-->
-
-            <!--<span ng-show="result.averagePrice > 0">&euro; {{(result.averagePrice/100) | number:0 | replaceComma}},00*</span>-->
-
-            <!--</strong>-->
-          <!--</div>-->
-          <!--<div class="facts__fact facts__fact&#45;&#45;model">-->
-            <!--Dit model wordt <strong>{{fact.modelTimesSeen | number:0 | replaceComma}}-->
-            <!--x per dag</strong> bekeken-->
-          <!--</div>-->
-
-          <!--<div class="facts__fact facts__fact&#45;&#45;average">-->
-            <!--Deze auto wordt gemiddeld in-->
-            <!--<strong>{{fact.averageDays}} dagen</strong> verkocht-->
-          <!--</div>-->
-
-          <!--<div class="facts__fact facts__fact&#45;&#45;brand">-->
-            <!--Dit merk wordt <strong>{{fact.brandTimesSeen | number:0 | replaceComma}} x per dag</strong> bekeken-->
-          <!--</div>-->
-
-        <!--</div>-->
-        <!--<div class="col-sm-5">-->
-          <!--<div class="resultbox-statistics__action">-->
-            <!--<div class="resultbox-statistics__callout"></div>-->
-            <!--<div class="resultbox-statistics__arrow"></div>-->
-            <!--<div class="resultbox-statistics__button">-->
-              <!--<mp-button ng-href="{{result.sellUrl}}">Plaats advertentie</mp-button>-->
-            <!--</div>-->
-          <!--</div>-->
-        <!--</div>-->
-      <!--</div>-->
-      <!--<div class="row" ng-show="result.averagePrice > 0">-->
-        <!--<div class="col-sm-7">-->
-          <!--<small>* Dit is slechts een gemiddelde vraagprijs, u bepaalt natuurlijk zelf wat de beste prijs is voor uw auto. Aan de gemiddelde vraagprijs kunnen geen rechten worden ontleend.</small>-->
-        <!--</div>-->
-      <!--</div>-->
-    <!--</div>-->
-  <!--</div>-->
-<!--</section>-->
-
-//
-
-
-
-
-
 <section class="resultbox">
   <div class="resultbox-details container">
     <div class="row">
@@ -103,12 +16,9 @@
           <div class="col-sm-7">
 
             <div class="facts__fact facts__fact--price">
-
               De gemiddelde vraagprijs is <strong class="no-wrap">
               <span ng-show="result.averagePrice === 0">onbekend</span>
-
               <span ng-show="result.averagePrice > 0">&euro; {{(result.averagePrice/100) | number:0 | replaceComma}},00*</span>
-
             </strong>
             </div>
             <div class="facts__fact facts__fact--model">
@@ -134,10 +44,10 @@
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>
+
   </div>
 </section>
 
