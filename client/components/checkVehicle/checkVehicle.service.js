@@ -6,8 +6,6 @@ angular.module('marktplaatsIacVerkoopApp')
       var defer = $q.defer()
       $http.jsonp('http://www.marktplaatsautoverkoper.nl/sellyourcar/api/vehicle?callback=JSON_CALLBACK&lpn='+license)
         .success(function (result) {
-            //defer.resolve({});
-            //return;
           if(result.success){
             checkVehiclePrice(license,mileage)
               .then(function(e) {

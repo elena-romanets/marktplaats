@@ -1,5 +1,5 @@
 .resultaat{
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(0, 0, 0, 0.5);
   float: left;
   width: 100%;
 }
@@ -68,36 +68,40 @@
   }
 }
 
-.facts{
+.facts {
   float: left;
   background-color: white;
   margin-top: 1px;
   width: 100%;
   margin-bottom: 40px;
   padding: 20px;
-  &__fact{
+
+  &__fact {
     font-size: 20px;
-    color: #36337a;
+    color: #FFFFFF;
     padding: 7px 0 7px 46px;
     background-repeat: no-repeat;
     -webkit-background-size: 30px;
     background-size: 30px;
-    &--model{
-      background-image: url('/assets/images/icon-fact-eye.png');
-      background-position: 3px 12px;
+    &--model {
+      background-image: url('/assets/images/icon-fact.png');
+      background-position: 3px -30px;
+      background-size: 30px;
     }
-    &--average{
-      background-image: url('/assets/images/icon-fact-clock.png');
-      background-position: 4px 2px;
-      background-size: 26px;
+    &--average {
+      background-image: url('/assets/images/icon-fact.png');
+      background-position: 3px -75px;
+      background-size: 30px;
     }
-    &--brand{
-      background-image: url('/assets/images/icon-fact-car.png');
-      background-position: 3px 10px;
+    &--brand {
+      background-image: url('/assets/images/icon-fact.png');
+      background-position: 3px -115px;
+      background-size: 30px;
     }
-    &--price{
-      background-image: url('/assets/images/icon-fact-money-light.png');
-      background-position: 3px 13px;
+    &--price {
+      background-image: url('/assets/images/icon-fact.png');
+      background-position: 3px 14px;
+      background-size: 30px;
     }
 
     strong {
@@ -107,24 +111,22 @@
 }
 
 .resultbox {
-  &-details {
-    background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #FFFFFF;
+  padding-top: 45px;
+  height: 333px;
 
-    &__license {
-      text-align: center;
-      padding: 10px 0;
-    }
-    &__data{
-      @media(min-width: @screen-sm){
-        padding: 55px 0 10px;
-      }
-      padding: 0 0 10px;
-      text-align: center;
-      table {
-        display: inline-block;
-        th,td{
-          text-align: left;
-        }
+  &-details {
+
+    &__data {
+      width: 460px;
+      margin: 0 auto;
+      padding-bottom: 55px;
+
+      div {
+        float: left;
+        margin-right: 32px;
+        font-size: 18px;
       }
     }
 
@@ -165,8 +167,8 @@
       position: absolute;
       display: block;
       background-image: url(/assets/images/statistics-callout.png);
-      width: 193px;
-      height: 43px;
+      width: 209px;
+      height: 41px;
       left: 20px;
       @media(min-width: @screen-sm) {
         left: 0;
@@ -184,6 +186,18 @@
         left: 190px;
       }
       top: 31px;
+    }
+  }
+}
+
+.small-add {
+  padding-top: 36px;
+
+  .col-sm-12 {
+    p {
+      text-align: center;
+      font-size: 13px;
+      color: #6a6965;
     }
   }
 }
