@@ -20,23 +20,41 @@
   }
 
   .searchbox-form__label {
-    color: #FFFFFF;
+    color: #c0c0c0;
+    font-size: 12px;
     text-align: left;
   }
 
   input {
-    height: 50px;
+    height: 58px;
+  }
+
+  .searchbox-form__row {
+    overflow: hidden;
+    width: 670px;
+    margin: 0 auto;
+  }
+
+  .searchbox-form__button {
+    margin-top: 26px;
+    width: 205px;
+  }
+
+  .searchbox-form__license {
+    width: 265px;
+  }
+  .searchbox-form__mileage {
+    width: 147px;
   }
 
   .searchbox-form__license,
   .searchbox-form__mileage,
   .searchbox-form__button {
-    display: inline-block;
-    margin-right: 27px;
+    float: left;
+    margin-left: 26px;
 
     &:first-child {
-      position: relative;
-      top: 21px;
+      margin: 0;
     }
   }
 }
@@ -46,6 +64,19 @@
 
   &.container {
     margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 41px;
+    font-weight: normal;
+
+    span {
+      font-weight: bold;
+    }
+  }
+
+  p {
+    font-size: 19px;
   }
 }
 .searchbox-fact {
@@ -92,12 +123,14 @@
   }
 }
 .mileage__input {
-  border: 3px solid #333748;
+  border: 1px solid rgba(0, 0, 0, .5);
   border-radius: 5px;
   margin-bottom: 2em;
   padding: 5px;
   text-align: center;
   font-weight: bold;
+  width: 100%;
+
   &:focus {
     outline: 0;
   }

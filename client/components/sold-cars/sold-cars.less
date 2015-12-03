@@ -1,0 +1,71 @@
+.sold-cars {
+  .col-sm-12 {
+    margin-bottom: 130px;
+  }
+
+  &__title {
+    font-size: 25px;
+    color: #21479c;
+    margin-top: 32px;
+    margin-bottom: 15px;
+  }
+
+  &__descr {
+    font-size: 16px;
+    margin-bottom: 27px;
+  }
+
+  &__names {
+    font-size: 16px;
+    font-weight: bold;
+    color: #292929;
+    overflow: hidden;
+
+    div {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+
+  &__pic {
+    background: url(../assets/images/desc-share.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 263px;
+    height: 56px;
+    margin: 53px auto 38px;
+  }
+
+  &__share {
+    font-size: 16px;
+  }
+
+  &__share_wrapper {
+
+    .icon-social {
+      display: inline-block;
+      width: 25px;
+      height: 24px;
+      font-size: 0rem;
+      background-size: cover;
+      float: left;
+      margin-left: 10px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+      &.icon-social-facebook {
+        background-image: url("../assets/images/icon-social-share.png");
+        background-position: 0;
+      }
+      &.icon-social-google {
+        background-image: url("../assets/images/icon-social-share.png");
+        background-position: 25px;
+      }
+      &.icon-social-twitter {
+        background-image: url("../assets/images/icon-social-share.png");
+        background-position: 59px;
+      }
+  }
+  }
+}
