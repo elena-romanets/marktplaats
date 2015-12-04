@@ -9,13 +9,13 @@
       <div class="searchbox-form__row">
         <div class="searchbox-form__license">
           <div class="searchbox-form__label">Kenteken</div>
-          <license-plate ng-model="license" editable="true"></license-plate>
+          <license-plate ng-model="result.licensePlate" editable="true"></license-plate>
           <div class="searchbox-form__error" ng-show="hasErrors">Geen auto gevonden met het bovenstaande kenteken.</div>
         </div>
 
         <div class="searchbox-form__mileage">
           <div class="searchbox-form__label">Kilometers (optioneel)</div>
-          <input type="text" class="mileage__input" ng-model="mileage" editable="true"/>
+          <input type="text" class="mileage__input" ng-model="result.mileage" editable="true"/>
         </div>
 
         <div class="searchbox-form__button">
