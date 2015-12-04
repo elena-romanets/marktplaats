@@ -12,6 +12,13 @@
     <meta name="ProjectBuild" content="12-06-2015 09:15"/>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
+
+    <meta property="og:title" content="Je auto verkopen? Het begint op Marktplaats.">
+    <meta property="og:site_name" content="Marktplaats auto verkopen">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://statisch.marktplaats.com/html/auto/geheimvandedealer/verkooptips.html">
+    <meta property="og:image" content="http://statisch.marktplaats.com/html/auto/geheimvandedealer/images/logo-footer@2x.png">
+
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
     <link rel="stylesheet" href="app/app.css"/>
@@ -49,5 +56,22 @@
     <script src="app/vendor.js"></script>
 
         <script src="app/app.js"></script>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : 'your-app-id',
+          xfbml      : true,
+          version    : 'v2.5'
+        });
+      };
+
+      (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
 </body>
 </html>
