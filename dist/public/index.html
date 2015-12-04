@@ -1,0 +1,53 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <base href="./">
+    <title>Je auto verkopen? Het begint op Marktplaats.</title>
+    <meta name="ProjectName" content="marktplaats.car_retargeting"/>
+    <meta name="ProjectBuild" content="12-06-2015 09:15"/>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="app/app.css"/>
+
+  </head>
+  <body ng-app="marktplaatsIacVerkoopApp">
+    <!-- Google Tag Manager, replace GTM-XXXXX with your container ID -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NLZDWP"
+                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NLZDWP');</script>
+    <!-- End Google Tag Manager -->
+
+    <!--[if lte IE 9]>
+    <script type="text/javascript">
+      location.assign('https://marktplaats.nl');
+    </script>
+    <![endif]-->
+
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <div ui-view=""></div>
+
+    <script src="http://www.youtube.com/player_api"></script>
+    <!--[if lt IE 9]>
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <script src="bower_components/json3/lib/json3.min.js"></script>
+    <![endif]-->
+    <script src="app/vendor.js"></script>
+
+        <script src="app/app.js"></script>
+</body>
+</html>
