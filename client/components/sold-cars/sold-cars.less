@@ -1,18 +1,30 @@
 .sold-cars {
+
+  &.cars-container {
+    max-width: 1235px;
+    margin: 0 auto;
+    padding: 17px 20px 10px;
+  }
+
   .col-sm-12 {
-    margin-bottom: 130px;
+    margin-bottom: 42px;
+  }
+
+  &__wrapper2 {
+    padding-left: 50px;
   }
 
   &__title {
     font-size: 25px;
     color: #21479c;
-    margin-top: 32px;
-    margin-bottom: 15px;
+    margin-top: 25px;
+    margin-bottom: 6px;
   }
 
   &__descr {
     font-size: 16px;
-    margin-bottom: 27px;
+    margin-bottom: 18px;
+    line-height: 21px;
   }
 
   &__names {
@@ -33,7 +45,11 @@
     background-position: center;
     width: 263px;
     height: 56px;
-    margin: 53px 85px 38px;
+    margin: 48px 111px 23px;
+
+    @media (max-width: 990px) {
+      margin: 48px 0px 23px;
+    }
   }
 
   &__share {
@@ -45,7 +61,11 @@
   &__share_wrapper {
 
     .col-sm-12 {
-      margin-bottom: 0;
+      padding-left: 48px;
+
+      @media (max-width: 1100px) {
+        padding-left: 0px;
+      }
     }
 
     .icon-social {
