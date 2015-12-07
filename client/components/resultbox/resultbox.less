@@ -83,23 +83,22 @@
     background-repeat: no-repeat;
     -webkit-background-size: 30px;
     background-size: 30px;
-    background-image: url('/assets/images/icon-fact.png');
-    background-size: 30px;
+    background-position: 3px;
 
     &--model {
-      background-position: 3px -30px;
+      background-image: url('/assets/images/icon-fact-model.png');
     }
 
     &--average {
-      background-position: 3px -75px;
+      background-image: url('/assets/images/icon-fact-average.png');
     }
 
     &--brand {
-      background-position: 3px -115px;
+      background-image: url('/assets/images/icon-fact-brand.png');
     }
 
     &--price {
-      background-position: 3px 14px;
+      background-image: url('/assets/images/icon-fact-price.png');
     }
 
     strong {
@@ -122,6 +121,10 @@
       width: 460px;
       margin: 0 auto;
       padding: 41px 0px 55px 7px;
+
+      @media (max-width: 500px) {
+        width: 100%;
+      }
 
       div {
         float: left;
