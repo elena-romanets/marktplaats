@@ -1,6 +1,11 @@
 .mp-panel{
   margin-bottom: 50px;
 
+
+  @media (max-width: 500px) {
+    margin-bottom: 0px;
+  }
+
   &__heading {
     font-size: 41px;
     font-weight: bold;
@@ -8,6 +13,13 @@
     text-align: center;
     color: #21479c;
     background: #fff;
+
+    @media (max-width: 500px) {
+      font-size: 31px;
+      line-height: 1.155;
+      padding: 20px 10px 10px;
+      margin: 0;
+    }
   }
 }
 
@@ -27,6 +39,11 @@
   .mp-panel__heading {
     padding: 60px 0 0;
     margin: 0;
+
+    @media (max-width: 500px) {
+      padding: 20px 10px 10px;
+      margin: 0;
+    }
   }
 
   .tips-item__title {
@@ -58,6 +75,11 @@
     line-height: 41px;
     max-width: 1000px;
     margin: 0 auto;
+
+    @media (max-width: 500px) {
+      padding: 20px 10px 10px;
+      margin: 0;
+    }
   }
 }
 
@@ -65,8 +87,18 @@
   .mp-panel__heading {
     font-size: 31px;
     margin: 60px 0 30px;
+
+    @media (max-width: 500px) {
+      padding: 20px 10px 10px;
+      margin: 0;
+    }
   }
   .mp-panel {
     margin-bottom: 60px;
+
+
+    @media (max-width: 500px) {
+      margin-bottom: 30px;
+    }
   }
 }

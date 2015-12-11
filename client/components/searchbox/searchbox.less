@@ -99,6 +99,16 @@
 
   &__container {
     max-width: 800px;
+
+    @media (max-width: 500px) {
+      max-width: 100%;
+
+      .col-xs-4 {
+        width: 100%;
+        padding: 0;
+      }
+    }
+
   }
 
   &.container {
@@ -126,8 +136,20 @@
   padding: 12px 0 12px 50px;
   background: url("/assets/images/icon-fact-teek.png") 8px 15px no-repeat;
 
+  @media (max-width: 500px) {
+    min-height: auto !important;
+  }
+
+  @media (max-width: 320px) {
+    padding: 8px 0 8px 50px;
+  }
+
   :last-child > &{
     margin-left: -19px;
+
+    @media (max-width: 500px) {
+      margin-left: 0;
+    }
   }
   &__text{
     color: #FFF;
@@ -137,6 +159,10 @@
   margin-top: 1px;
   text-align: center;
   padding: 55px 30px 37px;
+
+  @media (max-width: 500px) {
+    padding: 55px 30px 15px;
+  }
 
   &__link {
     margin-top: -5px;
@@ -228,7 +254,7 @@
     }
 
     @media (max-width: 500px) {
-      height: 950px;
+      height: 895px;
     }
 
     @media (max-width: 320px) {
