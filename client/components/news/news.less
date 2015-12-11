@@ -3,6 +3,10 @@
     max-width: 1235px;
     margin: 0 auto;
     padding: 17px 20px 50px;
+
+    @media (max-width: 500px) {
+      padding: 17px 20px 0px;
+    }
   }
 
   &__pic {
@@ -23,10 +27,20 @@
 
     &.centered {
       text-align: center;
+      @media (max-width: 500px) {
+        text-align: left;
+      }
     }
 
     &.last {
       text-align: right;
+      @media (max-width: 500px) {
+        text-align: left;
+      }
+    }
+
+    @media (max-width: 500px) {
+      text-align: left;
     }
   }
 
