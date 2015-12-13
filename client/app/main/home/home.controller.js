@@ -9,11 +9,12 @@ angular.module('marktplaatsIacVerkoopApp')
     $scope.hasErrors = false;
 
     function submitLicense(license, mileage) {
+      mileage = mileage || 0;
       checkVehicle(license, mileage)
         .then(function () {
           $scope.hasErrors = false;
 
-          $state.go('main.search', {license: license, mileage: mileage ? mileage : 0})
+          $state.go('main.search', {license: license, mileage: mileage})
         })
         .catch(function () {
           $scope.hasErrors = true;

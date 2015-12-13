@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('marktplaatsIacVerkoopApp')
-  .controller('SearchCtrl', function ($scope, carInformation, $analytics, selligent, $location, checkVehiclePrice) {
+  .controller('SearchCtrl', function ($scope, carInformation, $analytics, checkVehicle, $state, selligent, $location, checkVehiclePrice) {
     $analytics.pageTrack('/search');
 
     var data = carInformation.data;
@@ -21,4 +21,26 @@ angular.module('marktplaatsIacVerkoopApp')
       brandTimesSeen: data.views.make
     };
 
+    $scope.license = getParameterByName('licensePlate') || '';
+    $scope.hasErrors = false;
+
+    $scope.submitLicense = function (license, mileage) {
+      mileage = mileage || 0;
+      checkVehicle(license, mileage)
+        .then(function () {
+          $scope.hasErrors = false;
+
+          $state.go('main.search', {license: license, mileage: mileage})
+        })
+        .catch(function () {
+          $scope.hasErrors = true;
+        })
+    };
   });
+
+function getParameterByName(name) {
+  name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+  var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+  var results = regex.exec(location.search);
+  return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+}
