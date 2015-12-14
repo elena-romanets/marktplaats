@@ -85,6 +85,11 @@
     background-size: 30px;
     background-position: 3px;
 
+    @media (max-width: 720px) {
+      font-size: 15px;
+      line-height: 30px;
+    }
+
     &--model {
       background-image: url('/assets/images/icon-fact-model.png');
     }
@@ -130,21 +135,26 @@
         float: left;
         margin-right: 32px;
         font-size: 18px;
+
+        @media (max-width: 720px) {
+          font-size: 15px;
+          line-height: 30px;
+        }
       }
     }
 
-    &__title{
+    &__title {
       font-size: 20px;
       font-weight: bold;
       text-align: center;
       padding:7px 0 5px;
     }
-    &__label{
+    &__label {
       display:inline-block;
       width: 70px;
       height: 35px;
     }
-    &__field{
+    &__field {
       display:inline-block;
       width: 150px;
       height: 35px;

@@ -1,6 +1,10 @@
 .tips-first {
   margin-top: 49px;
 
+  @media (max-width: 720px) {
+    margin-top: 29px;
+  }
+
   &__wrapper {
 
     margin: 0 1% 0 4%;
@@ -11,6 +15,10 @@
     -webkit-box-shadow: 0px 3px 13px 0px rgba(50, 50, 50, 0.25);
     -moz-box-shadow:    0px 3px 13px 0px rgba(50, 50, 50, 0.25);
     box-shadow:         0px 3px 13px 0px rgba(50, 50, 50, 0.25);
+
+    @media (max-width: 720px) {
+      min-height: 390px;
+    }
   }
 
   &__text {
@@ -38,6 +46,11 @@
     line-height: 20px;
     padding: 0 15px;
     text-align: justify;
+
+    @media (max-width: 720px) {
+      font-size: 14px;
+      line-height: 18px;
+    }
   }
 }
 

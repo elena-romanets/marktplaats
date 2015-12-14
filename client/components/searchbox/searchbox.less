@@ -120,6 +120,11 @@
     font-weight: normal;
     margin-bottom: 14px;
 
+    @media (max-width: 720px) {
+      font-size: 28px;
+      line-height: 36px;
+    }
+
     span {
       font-weight: bold;
     }
@@ -128,6 +133,12 @@
   p {
     font-size: 19px;
     line-height: 24px;
+
+
+    @media (max-width: 720px) {
+      font-size: 18px;
+      line-height: 23px;
+    }
   }
 }
 .searchbox-fact {
@@ -160,8 +171,8 @@
   text-align: center;
   padding: 55px 30px 37px;
 
-  @media (max-width: 500px) {
-    padding: 55px 30px 15px;
+  @media (max-width: 720px) {
+    padding: 30px 30px 15px;
   }
 
   &__link {
@@ -219,19 +230,19 @@
   }
 
   @media (max-width: 560px) {
-    height: 1250px;
+    height: 1215px;
   }
 
-  @media (max-width: 509px) {
-    height: 1400px;
+  @media (max-width: 500px) {
+    height: 1295px;
   }
 
   @media (max-width: 375px) {
-    height: 1450px;
+    height: 1400px;
   }
 
   @media (max-width: 320px) {
-    height: 1650px;
+    height: 1515px;
   }
 
   &.home {
@@ -242,23 +253,23 @@
     }
 
     @media (max-width: 768px) {
-      height: 750px;
-    }
-
-    @media (max-width: 710px) {
       height: 790px;
     }
 
-    @media (max-width: 530px) {
-      height: 820px;
+    @media (max-width: 720px) {
+      height: 640px;
+    }
+
+    @media (max-width: 658px) {
+      height: 705px;
     }
 
     @media (max-width: 500px) {
-      height: 895px;
+      height: 780px;
     }
 
     @media (max-width: 320px) {
-      height: 1050px;
+      height: 885px;
     }
   }
 }
