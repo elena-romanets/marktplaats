@@ -5,7 +5,7 @@
       <p>Bereken eenvoudig de waarde van je auto en plaats vervolgens je auto advertentie binnen 2 minuten. Ontdek hoe vergelijkbare auto's gemiddeld verkocht worden op Marktplaats.
         Je auto verkopen? Het begint op Marktplaats.</p>
     </div>
-    <form class="searchbox-form" ng-submit="submitLicense(license)">
+    <form class="searchbox-form" ng-submit="submitLicense(license, mileage)">
       <div class="searchbox-form__row">
         <div class="searchbox-form__license">
           <div class="searchbox-form__label">Kenteken</div>
@@ -21,6 +21,8 @@
         <div class="searchbox-form__button">
           <mp-button ng-click="submitLicense(license, mileage)">Bereken waarde</mp-button>
         </div>
+
+        <input type="submit" ng-enter="submitLicense(license, mileage)"/>
       </div>
 
       <div class="searchbox-form__link">
