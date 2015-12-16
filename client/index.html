@@ -13,7 +13,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta property="og:title" content="Auto verkopen | Marktplaats">
+    <meta property="og:title" content="Dagwaarde auto berekenen | Marktplaats">
     <meta property="og:site_name" content="Marktplaats auto verkopen">
     <meta property="og:type" content="website">
     <meta property="og:url" content="http://statisch.marktplaats.com/html/auto/geheimvandedealer/verkooptips.html">
@@ -32,9 +32,6 @@
 
     <script src="https://cdn.ravenjs.com/1.3.0/jquery,native/raven.min.js"></script>
     <script>Raven.config('https://02ee6014a3004a7abd93f72120415b7e@app.getsentry.com/59343').install();</script>
-
-    <script id="facebook-jssdk" src="//connect.facebook.net/en_US/all.js"></script>
-
   </head>
   <body ng-app="marktplaatsIacVerkoopApp">
     <!-- Google Tag Manager, replace GTM-XXXXX with your container ID -->
@@ -46,6 +43,29 @@
       '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-NLZDWP');</script>
     <!-- End Google Tag Manager -->
+
+    <script>
+      window.fbAsyncInit = function() {
+        // init the FB JS SDK
+        FB.init({
+          appId      : '510999198969677',                        // App ID from the app dashboard
+          channelUrl : '//marktplaats.e-serv.nl/channel.html', // Channel file for x-domain comms
+          status     : true,                                 // Check Facebook Login status
+          xfbml      : true                                  // Look for social plugins on the page
+        });
+
+        // Additional initialization code such as adding Event Listeners goes here
+      };
+
+      // Load the SDK asynchronously
+      (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/all.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
 
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
