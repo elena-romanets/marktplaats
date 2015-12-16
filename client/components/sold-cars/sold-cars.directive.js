@@ -8,7 +8,7 @@ angular.module('marktplaatsIacVerkoopApp')
       link: function (scope, element, attrs) {
         element.find(".icon-social-twitter").each(function () {
           var wrapper = $(this).closest('.row');
-          var description = wrapper.find('.sold-cars__descr').text();
+          var description = wrapper.find('.sold-cars__tw_descr').text();
           var encodedDescription = encodeURIComponent(description);
           var videoId = wrapper.find('sold-cars-item').attr('youtube-id');
 
