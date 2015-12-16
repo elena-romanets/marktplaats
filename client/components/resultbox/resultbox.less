@@ -90,12 +90,19 @@
       line-height: 30px;
     }
 
+    @media (max-width: 320px) {
+      font-size: 14px;
+      line-height: 26px;
+    }
+
     &--model {
       background-image: url('/assets/images/icon-fact-model.png');
     }
 
     &--average {
       background-image: url('/assets/images/icon-fact-average.png');
+      background-size: 26px;
+      background-position: 3px 0;
     }
 
     &--brand {
@@ -205,6 +212,10 @@
 
 .small-add {
   padding-top: 36px;
+
+  @media(min-width: 375px) {
+    padding-top: 25px;
+  }
 
   .col-sm-12 {
     p {
