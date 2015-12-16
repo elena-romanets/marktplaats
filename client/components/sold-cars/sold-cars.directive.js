@@ -9,7 +9,7 @@ angular.module('marktplaatsIacVerkoopApp')
 
         var $ = angular.element;
 
-        $(".icon-social-facebook").delegate(".facebook", "click", function (e) {
+        $(".sold-cars__share_links").delegate(".icon-social-facebook", "click", function (e) {
           e.preventDefault();
 
           var wrapper = $(this).closest('.row');
