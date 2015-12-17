@@ -548,7 +548,7 @@ module.exports = function (grunt) {
         dest: '<%= yeoman.dist %>/public/app/app.css',             // destination directory or file
         replacements: [{
           from: '/assets/',
-          to: '../assets/'
+          to: '/assets/'
         }]
       }
     }
