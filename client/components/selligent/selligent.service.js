@@ -24,7 +24,7 @@ angular.module('marktplaatsIacVerkoopApp')
      * @returns {string}
      */
     function createComposedPixelUrl(carInformation, EXTID) {
-      var composedUrl = 'http://marktplaats.emsecure.net/optiext/optiextension.dll?ID=' + EXTID;
+      var composedUrl = '//marktplaats.emsecure.net/optiext/optiextension.dll?ID=' + EXTID;
       composedUrl+= '&P1=' + carInformation.licensePlate; // License plate
       composedUrl+= '&P2=' + carInformation.mileage; // Mileage
       composedUrl+= '&P3=' + carInformation.averagePrice; // Price
