@@ -192,8 +192,18 @@
   }
 
   &__link {
-    margin-top: -5px;
-    margin-left: -7px;
+
+    @media (min-width: 769px) {
+      margin-top: -5px;
+      margin-right: 72px;
+      text-align: right;
+    }
+
+    @media (min-width: 769px) and (max-width: 991px) {
+      margin-top: -5px;
+      margin-right: -42px;
+      text-align: right;
+    }
 
     @media (max-width: 768px) {
       margin-top: 20px;
