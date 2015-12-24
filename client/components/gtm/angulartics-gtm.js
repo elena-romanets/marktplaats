@@ -28,7 +28,7 @@ angular.module('angulartics.google.tagmanager.custom', ['angulartics'])
 		var dataLayer = window.dataLayer = window.dataLayer || [];
 		dataLayer.push({
       'event': 'eventPush',
-      'pageName': 'CARS_VERKOPEN2015',
+      'pageName': 'CARS_AUTOWAARDEBEREKENEN',
 		});
 	});
 
@@ -45,7 +45,7 @@ angular.module('angulartics.google.tagmanager.custom', ['angulartics'])
     properties = properties || {}
 		dataLayer.push({
 			'event': 'eventPush',
-      'pageName': 'CARS_VERKOPEN2015',
+      'pageName': 'CARS_AUTOWAARDEBEREKENEN',
 			'e_category': location.pathname+location.hash.substring(2),
 			'e_action': action,
 			//'e_label': properties.eventType
