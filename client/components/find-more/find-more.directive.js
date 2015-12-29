@@ -4,7 +4,7 @@ angular.module('marktplaatsIacVerkoopApp')
   .directive('findMore', function () {
     return {
       templateUrl: 'components/find-more/find-more.html',
-      restrict: 'EA',
+      restrict: 'A',
       link: function (scope, element, attrs) {
       }
     };

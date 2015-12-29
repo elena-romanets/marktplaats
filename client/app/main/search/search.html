@@ -9,7 +9,7 @@
       <div class="searchbox-form__row">
         <div class="searchbox-form__license">
           <div class="searchbox-form__label">Kenteken</div>
-          <license-plate ng-model="result.licensePlate" editable="true"></license-plate>
+          <div data-license-plate="" ng-model="result.licensePlate" editable="true"></div>
           <div class="searchbox-form__error" ng-show="hasErrors">Geen auto gevonden met het bovenstaande kenteken.</div>
         </div>
 
@@ -19,7 +19,7 @@
         </div>
 
         <div class="searchbox-form__button">
-          <mp-button ng-click="submitLicense(result.licensePlate, result.mileage)">Bereken opnieuw</mp-button>
+          <div data-mp-button="" ng-click="submitLicense(result.licensePlate, result.mileage)">Bereken opnieuw</div>
         </div>
 
         <input type="submit" ng-enter="submitLicense(result.licensePlate, result.mileage)"/>
@@ -31,15 +31,15 @@
     </form>
   </div>
 
-  <sellingent
+  <div data-sellingent=""
     result="result"
     average-price="averagePrice"
     fact="fact">
-  </sellingent>
+  </div>
 
-  <resultbox
+  <div data-resultbox=""
     result="result"
     average-price="averagePrice"
     fact="fact">
-  </resultbox>
+  </div>
 </div>
