@@ -41,12 +41,13 @@
   }
 
   .searchbox-form__row {
-    overflow: hidden;
     width: 670px;
+    height: 120px;
     margin: 0 auto;
 
     @media (max-width: 768px) {
       width: auto;
+      height: auto;
     }
   }
 
@@ -193,21 +194,20 @@
 
   &__link {
 
-    @media (min-width: 769px) {
-      margin-top: -5px;
-      margin-right: 75px;
-      text-align: right;
+    margin-top: 20px;
+
+    &.mob {
+      display: none;
     }
 
-    @media (min-width: 769px) and (max-width: 991px) {
-      margin-top: -5px;
-      margin-right: -40px;
-      text-align: right;
+    a {
+      display: block;
+      width: 300px;
+      padding: 0;
+      margin: 0;
+      text-align: left;
     }
 
-    @media (max-width: 768px) {
-      margin-top: 20px;
-    }
   }
 
   &__label {
