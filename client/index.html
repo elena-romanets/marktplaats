@@ -1,4 +1,5 @@
 <!doctype html>
+<html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
@@ -72,7 +73,410 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div ui-view=""></div>
+    <div ui-view="" class="ng-scope"><div data-header="" class="ng-scope"><div class="header">
+      <div class="header__inner">
+        <div class="container">
+          <a href="//www.marktplaats.nl" class="header__logo">
+            <img src="assets/images/marktplaats-logo.png" class="floatLeft">
+          </a>
+        </div>
+      </div>
+    </div>
+    </div>
+      <div data-jumbo="" show-overlay="carInformation.data" class="ng-scope ng-isolate-scope"><div class="jumbo">
+        <div class="jumbo__overlay ng-hide" ng-show="showOverlay"></div>
+        <div>
+          <div class="container-main ng-scope">
+            <div class="row">
+              <div ng-class="{ 'col-sm-12': carInformation.data }" class="main-container">
+                <div data-panel="" class="header-panel ng-isolate-scope"><div class="mp-panel">
+                  <h2 class="mp-panel__heading mob ng-binding" ng-bind-html="title"></h2>
+                  <div class="mp-panel__body">
+                    <div>
+                      <!-- uiView:  --><div data-ui-view="" class="ng-scope"><div data-searchbox="" class="ng-scope"><div class="main-header home">
+                      <div class="searchbox container">
+                        <div class="row searchbox-facts">
+                          <h1>Je auto verkopen? <span>Bereken de waarde van je auto.</span></h1>
+                          <p>Bereken eenvoudig de waarde van je auto en plaats vervolgens je auto advertentie binnen 2 minuten. Ontdek hoe vergelijkbare auto's gemiddeld verkocht worden op Marktplaats.
+                            Je auto verkopen? Het begint op Marktplaats.</p>
+                        </div>
+                        <form class="searchbox-form ng-pristine ng-valid ng-valid-maxlength" ng-submit="submitLicense(license, mileage)">
+                          <div class="searchbox-form__row">
+                            <div class="searchbox-form__license">
+                              <div class="searchbox-form__label">Kenteken</div>
+                              <div class="license-plate ng-isolate-scope ng-valid" data-license-plate="" ng-model="license" editable="true">
+                                <input type="text" maxlength="6" class="license-plate__input ng-pristine ng-untouched ng-valid ng-valid-maxlength" ng-model="ngModel" ng-show="editable">
+                                <div class="license-plate__input ng-binding ng-hide" ng-hide="editable"></div>
+                              </div>
+                              <div class="searchbox-form__error ng-hide" ng-show="hasErrors">Geen auto gevonden met het bovenstaande kenteken.</div>
+                            </div>
+
+                            <div class="searchbox-form__mileage">
+                              <div class="searchbox-form__label">Kilometers (optioneel)</div>
+                              <input type="text" class="mileage__input ng-pristine ng-untouched ng-valid" ng-model="mileage" editable="true">
+                            </div>
+
+                            <div class="searchbox-form__button">
+                              <a href="" class="mp-button" data-mp-button="" ng-click="submitLicense(license, mileage)" analytics-on="">
+                                <div><span class="ng-scope">Bereken waarde</span></div>
+                              </a>
+                              <div class="searchbox-form__link">
+                                <div><a href="https://www.marktplaats.nl/syi/plaatsAdvertentie.html" class="searchbox-form__msg" target="_blank">Of plaats je auto direct op Marktplaats</a></div>
+                              </div>
+                            </div>
+
+                            <input type="submit" ng-enter="submitLicense(license, mileage)" analytics-on="">
+                          </div>
+                        </form>
+
+
+                        <div class="searchbox-facts container searchbox-facts__container">
+                          <div class="col-xs-4">
+                            <div class="searchbox-fact" equalizer="fact" style="min-height: 60px; height: auto;">
+                              <div class="searchbox-fact__text">
+            <span class="searchbox-fact__desc">
+              1 miljoen unieke bezoekers per maand
+            </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-xs-4">
+                            <div class="searchbox-fact" equalizer="fact" style="min-height: 60px; height: auto;">
+                              <div class="searchbox-fact__text">
+            <span class="searchbox-fact__desc">
+              50% krijgt een goed bod binnen 3 dagen
+            </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-xs-4">
+                            <div class="searchbox-fact" equalizer="fact" style="min-height: 60px; height: auto;">
+                              <div class="searchbox-fact__text">
+            <span class="searchbox-fact__desc">
+              30% verkoopt de auto zelfs binnen 1 dag!
+            </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div></div></div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+
+                <div data-panel="" title="Het geheim van een goede auto-advertentie" class="panel-tips-first ng-isolate-scope"><div class="mp-panel">
+                  <h2 class="mp-panel__heading mob ng-binding" ng-bind-html="title">Het geheim van een goede auto-advertentie</h2>
+                  <div class="mp-panel__body">
+                    <div>
+                      <div data-tips-first="" class="ng-scope"><div class="tips-first container">
+                        <div class="tips__items">
+                          <div class="row">
+                            <div class="col-sm-5 tips-first__wrapper">
+                              <div data-tips-item="" title="Goede foto’s maken" youtube-id="95B99inuohs" class="ng-isolate-scope"><div class="tips-item">
+                                <div class="tips-item__video">
+                                  <iframe video-id="youtubeId" player-width="'100%'" player-height="'100%'" class="ng-isolate-scope" id="unique-youtube-embed-id-1" frameborder="0" allowfullscreen="1" title="YouTube video player" width="100%" height="100%" src="https://www.youtube.com/embed/95B99inuohs?enablejsapi=1&amp;origin=http%3A%2F%2Flocalhost%3A9000"></iframe>
+                                </div>
+                                <div class="tips-item__title ng-binding">Goede foto’s maken</div>
+                              </div></div>
+                              <div class="tips-first__descr">Een goede foto verkoopt de auto bijna vanzelf. Maar hoe maak je simpel en snel goede foto’s van je auto? Een gerenommeerde autofotograaf deelt zijn beste tips.</div>
+                            </div>
+                            <div class="col-sm-5 tips-first__wrapper">
+                              <div data-tips-item="" title="Pakkende advertentieteksten" youtube-id="uOnjioduu-M" class="ng-isolate-scope"><div class="tips-item">
+                                <div class="tips-item__video">
+                                  <iframe video-id="youtubeId" player-width="'100%'" player-height="'100%'" class="ng-isolate-scope" id="unique-youtube-embed-id-2" frameborder="0" allowfullscreen="1" title="YouTube video player" width="100%" height="100%" src="https://www.youtube.com/embed/uOnjioduu-M?enablejsapi=1&amp;origin=http%3A%2F%2Flocalhost%3A9000"></iframe>
+                                </div>
+                                <div class="tips-item__title ng-binding">Pakkende advertentieteksten</div>
+                              </div></div>
+                              <div class="tips-first__descr">Hoe breng je je auto zo goed mogelijk onder de aandacht bij 1 miljoen autokopers? Ontdek wat belangrijk is aan een goede advertentietekst.</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div></div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+
+                <div data-panel="" title="Verkooptips van onze experts" class="panel-tips panel-bg ng-isolate-scope"><div class="mp-panel">
+                  <h2 class="mp-panel__heading mob ng-binding" ng-bind-html="title">Verkooptips van onze experts</h2>
+                  <div class="mp-panel__body">
+                    <div>
+                      <div data-tips="" class="ng-scope"><div class="tips container">
+                        <div class="tips__text">Een team van experts nam gedurende een aantal weken autoadvertenties onder handen. Een gratis service om mensen die hun auto écht snel kwijt moeten, een handje te helpen. Ontdek hoe we van gewone mensen topverkopers maakten en leer zelf de geheimen van de dealer.</div>
+
+                        <div class="tips__items">
+                          <div class="row">
+                            <div class="col-sm-5 tips__wrapper">
+                              <div data-tips-item="" youtube-id="3mGmMYS2o78" class="ng-isolate-scope"><div class="tips-item">
+                                <div class="tips-item__video">
+                                  <iframe video-id="youtubeId" player-width="'100%'" player-height="'100%'" class="ng-isolate-scope" id="unique-youtube-embed-id-3" frameborder="0" allowfullscreen="1" title="YouTube video player" width="100%" height="100%" src="https://www.youtube.com/embed/3mGmMYS2o78?enablejsapi=1&amp;origin=http%3A%2F%2Flocalhost%3A9000"></iframe>
+                                </div>
+                                <div class="tips-item__title ng-binding"></div>
+                              </div></div>
+                              <div class="tips-item-descr">Hoe bouw je een goede advertentie op en hoe kom je tot de juiste prijs?</div>
+                            </div>
+                            <div class="col-sm-5 tips__wrapper">
+                              <div data-tips-item="" youtube-id="95B99inuohs" class="ng-isolate-scope"><div class="tips-item">
+                                <div class="tips-item__video">
+                                  <iframe video-id="youtubeId" player-width="'100%'" player-height="'100%'" class="ng-isolate-scope" id="unique-youtube-embed-id-4" frameborder="0" allowfullscreen="1" title="YouTube video player" width="100%" height="100%" src="https://www.youtube.com/embed/95B99inuohs?enablejsapi=1&amp;origin=http%3A%2F%2Flocalhost%3A9000"></iframe>
+                                </div>
+                                <div class="tips-item__title ng-binding"></div>
+                              </div></div>
+                              <div class="tips-item-descr">Hoe kom je simpel en snel tot een goede foto van je auto?</div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-5 tips__wrapper">
+                              <div data-tips-item="" youtube-id="uOnjioduu-M" class="ng-isolate-scope"><div class="tips-item">
+                                <div class="tips-item__video">
+                                  <iframe video-id="youtubeId" player-width="'100%'" player-height="'100%'" class="ng-isolate-scope" id="unique-youtube-embed-id-5" frameborder="0" allowfullscreen="1" title="YouTube video player" width="100%" height="100%" src="https://www.youtube.com/embed/uOnjioduu-M?enablejsapi=1&amp;origin=http%3A%2F%2Flocalhost%3A9000"></iframe>
+                                </div>
+                                <div class="tips-item__title ng-binding"></div>
+                              </div></div>
+                              <div class="tips-item-descr">Wat is belangrijk aan een goede advertentietekst?</div>
+                            </div>
+                            <div class="col-sm-5 tips__wrapper">
+                              <div data-tips-item="" youtube-id="otsmPoDZbXY" class="ng-isolate-scope"><div class="tips-item">
+                                <div class="tips-item__video">
+                                  <iframe video-id="youtubeId" player-width="'100%'" player-height="'100%'" class="ng-isolate-scope" id="unique-youtube-embed-id-6" frameborder="0" allowfullscreen="1" title="YouTube video player" width="100%" height="100%" src="https://www.youtube.com/embed/otsmPoDZbXY?enablejsapi=1&amp;origin=http%3A%2F%2Flocalhost%3A9000"></iframe>
+                                </div>
+                                <div class="tips-item__title ng-binding"></div>
+                              </div></div>
+                              <div class="tips-item-descr">Hoe val je op tussen andere autoadvertenties op Marktplaats?</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+
+                <div data-panel="" class="panel-news ng-isolate-scope"><div class="mp-panel">
+                  <h2 class="mp-panel__heading mob ng-binding" ng-bind-html="title"></h2>
+                  <div class="mp-panel__body">
+                    <div>
+                      <div data-news="" class="ng-scope"><div class="news news-container">
+                        <div class="news__logo"></div>
+                        <div class="news__items">
+                          <div class="row">
+                            <div class="col-sm-4 news__item">
+                              <div class="news__pic">
+                                <img src="assets/images/car-toyota.jpg" alt="Toyota" height="255" width="385">
+                              </div>
+                              <div class="news__title">
+                                <a href="//www.marktplaatsautojournaal.nl/autoassistent/aankoop/aankooptips-occasions-toyota-auris-2007-2012/" target="_blank">Aankooptips occasions: Toyota Auris Sports</a>
+                              </div>
+                              <div class="news__descr">
+                                Nov 25 2015  |  Steffert Stienstra | De tweede generatie Renault Scénic kwam in 2003 op de markt. Technisch is het model gebaseerd op de Renault Mégane. De midi-MPV Scénic biedt genoeg plaats voor vijf personen tijdens een..
+                                <p class="news__descr-link">
+                                  <a href="//www.marktplaatsautojournaal.nl/autoassistent/aankoop/aankooptips-occasions-toyota-auris-2007-2012/" target="_blank">Lees verder &gt;</a>
+                                </p>
+                              </div>
+                            </div>
+                            <div class="col-sm-4 news__item centered">
+                              <div class="news__pic">
+                                <img src="assets/images/car-merc.jpg" alt="Mercedes" height="255" width="385">
+                              </div>
+                              <div class="news__title">
+                                <a href="//www.marktplaatsautojournaal.nl/merken/mercedes-benz/review-mercedes-amg-c63-s-coupe-video/" target="_blank">Review: Mercedes-AMG C63 S Coupé [VIDEO]</a>
+                              </div>
+                              <div class="news__descr">
+                                Nov 25 2015  |  Waar de vorige Mercedes-AMG C63 de beschikking had over het brute atmosferische 6,2-literblok, krijgt de nieuwe generatie een 4,0-literblok met twee turbo´s. Maar is dat net zo lekker? Motorblok De vori ....
+                                <p class="news__descr-link">
+                                  <a href="//www.marktplaatsautojournaal.nl/merken/mercedes-benz/review-mercedes-amg-c63-s-coupe-video/" target="_blank">Lees verder &gt;</a>
+                                </p>
+                              </div>
+                            </div>
+                            <div class="col-sm-4 news__item last">
+                              <div class="news__pic">
+                                <img src="assets/images/car-hyundai.jpg" alt="Hundai" height="255" width="385">
+                              </div>
+                              <div class="news__title">
+                                <a href="//www.marktplaatsautojournaal.nl/autoassistent/aankoop/aankooptips-occasions-hyundai-i10-2008-2013-video/" target="_blank">Aankooptips occasions: Hyundai i10 (2007-2014) [VIDEO]</a>
+                              </div>
+                              <div class="news__descr">
+                                Nov 23 2015  |  De Hyundai i10 werd in 2007 geïntroduceerd als vervanger van de Hyundai Atos. In 2014 is de tweede generatie i10 op de markt gekomen en dat maakt de eerste generatie misschien een interessante occasi ...
+                                <p class="news__descr-link">
+                                  <a href="//www.marktplaatsautojournaal.nl/autoassistent/aankoop/aankooptips-occasions-hyundai-i10-2008-2013-video/" target="_blank">Lees verder &gt;</a>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+
+                <div data-panel="" title="Ontdek hoe andere gebruikers hun auto succesvol verkochten" class="panel-sold-cars panel-bg ng-isolate-scope"><div class="mp-panel">
+                  <h2 class="mp-panel__heading mob ng-binding" ng-bind-html="title">Ontdek hoe andere gebruikers hun auto succesvol verkochten</h2>
+                  <div class="mp-panel__body">
+                    <div>
+                      <div data-sold-cars="" class="ng-scope"><div class="sold-cars cars-container">
+                        <div class="sold-cars__items">
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <div class="sold-cars__wrapper1 col-sm-6">
+                                <div data-sold-cars-item="" youtube-id="wWGwNJPJ31k" class="ng-isolate-scope"><div class="sold-cars-item">
+                                  <div class="sold-cars-item__video">
+                                    <iframe video-id="youtubeId" player-width="'100%'" player-height="'100%'" class="ng-isolate-scope" id="unique-youtube-embed-id-7" frameborder="0" allowfullscreen="1" title="YouTube video player" width="100%" height="100%" src="https://www.youtube.com/embed/wWGwNJPJ31k?enablejsapi=1&amp;origin=http%3A%2F%2Flocalhost%3A9000"></iframe>
+                                  </div>
+                                </div></div>
+                              </div>
+                              <div class="sold-cars__wrapper2 col-sm-6">
+                                <div class="sold-cars__title">Hoe Peter zijn Volkswagen Transporter pick-up verkocht</div>
+                                <div class="sold-cars__descr">
+                                  Wij hebben Peter geholpen met het verkopen van zijn Volkswagen Transporter Pick-up. Na 3 uur ontving hij al een serieus bod en binnen een week verkocht hij zijn Transporter. Ontdek hoe enkele kleine aanpassingen op de advertentie van Peter het verschil gemaakt hebben.
+                                </div>
+                                <div class="sold-cars__tw_descr hidden">
+                                  Ontdek hoe Peter op Marktplaats na 3 uur een serieus bod ontving op zijn Volkswagen Pick-up.
+                                </div>
+                                <div class="sold-cars__pic"></div>
+                                <div class="sold-cars__share_wrapper">
+                                  <div class="social-media-wrapper name col-sm-12">
+                                    <div class="social-media left">
+                                      <span class="sold-cars__share">Deel de verkooptips met uw vrienden:</span>
+                <span class="sold-cars__share_links">
+                  <!-- facebook -->
+                  <a href="#" class="icon-social icon-social-facebook" data-type="facebook" data-url="" data-title="" data-description="" target="_blank">F</a>
+                  <!-- twitter -->
+                  <a class="icon-social icon-social-twitter" data-type="twitter" data-url="" data-via="" data-description="" target="_blank" href="https://twitter.com/share?url=http://www.marktplaats.nl/m/auto/auto-waarde-berekenen/&amp;text=%0A%20%20%20%20%20%20%20%20%20%20%20%20Ontdek%20hoe%20Peter%20op%20Marktplaats%20na%203%20uur%20een%20serieus%20bod%20ontving%20op%20zijn%20Volkswagen%20Pick-up.%0A%20%20%20%20%20%20%20%20%20%20&amp;hashtags=Marktplaats">T</a>
+                  <!-- google plus -->
+                  <a href="https://plus.google.com/share?url={http://www.marktplaats.nl/m/auto/auto-waarde-berekenen/}" class="icon-social icon-social-google" data-id="social_vrk-auto-fb" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">G</a>
+                </span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <div class="sold-cars__wrapper2 col-sm-6">
+                                <div class="sold-cars__title">Hoe Rens zijn Citroën Acadiane in 3 dagen verkocht</div>
+                                <div class="sold-cars__descr">
+                                  Wij hebben Rens geholpen met het verkopen van zijn unieke Citroën Acadiane oldtimer. Ontdek de kleine ingrepen die we gedaan hebben om zijn advertentie te verbeteren.
+                                </div>
+                                <div class="sold-cars__tw_descr hidden">
+                                  Ontdek hoe Marktplaats Rens heeft geholpen met het verkopen van zijn unieke Citroën Acadiane oldtimer
+                                </div>
+                                <div class="sold-cars__pic"></div>
+                                <div class="sold-cars__share_wrapper">
+                                  <div class="social-media-wrapper name col-sm-12">
+                                    <div class="social-media right">
+                                      <span class="sold-cars__share">Deel de verkooptips met uw vrienden:</span>
+                <span class="sold-cars__share_links">
+                  <!-- facebook -->
+                  <a href="#" class="icon-social icon-social-facebook" data-type="facebook" data-url="" data-title="" data-description="" target="_blank">F</a>
+                  <!-- twitter -->
+                  <a class="icon-social icon-social-twitter" data-type="twitter" data-url="" data-via="" data-description="" target="_blank" href="https://twitter.com/share?url=http://www.marktplaats.nl/m/auto/auto-waarde-berekenen/&amp;text=%0A%20%20%20%20%20%20%20%20%20%20%20%20Ontdek%20hoe%20Marktplaats%20Rens%20heeft%20geholpen%20met%20het%20verkopen%20van%20zijn%20unieke%20Citro%C3%ABn%20Acadiane%20oldtimer%0A%20%20%20%20%20%20%20%20%20%20&amp;hashtags=Marktplaats">T</a>
+                  <!-- google plus -->
+                  <a href="https://plus.google.com/share?url={http://www.marktplaats.nl/m/auto/auto-waarde-berekenen/}" class="icon-social icon-social-google" data-id="social_vrk-auto-fb" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">G</a>
+                </span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="sold-cars__wrapper1 col-sm-6 second-video">
+                                <div data-sold-cars-item="" youtube-id="gmwdyuRrQ7w" class="ng-isolate-scope"><div class="sold-cars-item">
+                                  <div class="sold-cars-item__video">
+                                    <iframe video-id="youtubeId" player-width="'100%'" player-height="'100%'" class="ng-isolate-scope" id="unique-youtube-embed-id-8" frameborder="0" allowfullscreen="1" title="YouTube video player" width="100%" height="100%" src="https://www.youtube.com/embed/gmwdyuRrQ7w?enablejsapi=1&amp;origin=http%3A%2F%2Flocalhost%3A9000"></iframe>
+                                  </div>
+                                </div></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <div class="sold-cars__wrapper1 col-sm-6">
+                                <div data-sold-cars-item="" youtube-id="hOqG6n8LAqA" class="ng-isolate-scope"><div class="sold-cars-item">
+                                  <div class="sold-cars-item__video">
+                                    <iframe video-id="youtubeId" player-width="'100%'" player-height="'100%'" class="ng-isolate-scope" id="unique-youtube-embed-id-9" frameborder="0" allowfullscreen="1" title="YouTube video player" width="100%" height="100%" src="https://www.youtube.com/embed/hOqG6n8LAqA?enablejsapi=1&amp;origin=http%3A%2F%2Flocalhost%3A9000"></iframe>
+                                  </div>
+                                </div></div>
+                              </div>
+                              <div class="sold-cars__wrapper2 col-sm-6 last-text-wrapper">
+                                <div class="sold-cars__title">Hoe Tijmen zijn Volkswagen Golf verkocht</div>
+                                <div class="sold-cars__descr">
+                                  Wij hebben Tijmen geholpen met de verkoop van zijn Volkswagen Golf. Binnen een paar uur kreeg hij al een serieus bod en hij heeft zijn auto verkocht voor een goede prijs. Zie meer over de auto van Tijmen.
+                                </div>
+                                <div class="sold-cars__tw_descr hidden">
+                                  Ontdek hoe Marktplaats Tijmen heeft geholpen met de verkoop van zijn Volkswagen Golf.
+                                </div>
+                                <div class="sold-cars__pic"></div>
+                                <div class="sold-cars__share_wrapper">
+                                  <div class="social-media-wrapper name col-sm-12">
+                                    <div class="social-media left">
+                                      <span class="sold-cars__share">Deel de verkooptips met uw vrienden:</span>
+                <span class="sold-cars__share_links">
+                  <!-- facebook -->
+                  <a href="#" class="icon-social icon-social-facebook" data-type="facebook" data-url="" data-title="" data-description="" target="_blank">F</a>
+                  <!-- twitter -->
+                  <a class="icon-social icon-social-twitter" data-type="twitter" data-url="" data-via="" data-description="" target="_blank" href="https://twitter.com/share?url=http://www.marktplaats.nl/m/auto/auto-waarde-berekenen/&amp;text=%0A%20%20%20%20%20%20%20%20%20%20%20%20Ontdek%20hoe%20Marktplaats%20Tijmen%20heeft%20geholpen%20met%20de%20verkoop%20van%20zijn%20Volkswagen%20Golf.%0A%20%20%20%20%20%20%20%20%20%20&amp;hashtags=Marktplaats">T</a>
+                  <!-- google plus -->
+                  <a href="https://plus.google.com/share?url={http://www.marktplaats.nl/m/auto/auto-waarde-berekenen/}" class="icon-social icon-social-google" data-id="social_vrk-auto-fb" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">G</a>
+              </span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+
+                <div data-panel="" title="Waarde auto berekenen? Het begint op Marktplaats." class="panel-find-more ng-isolate-scope"><div class="mp-panel">
+                  <h2 class="mp-panel__heading mob ng-binding" ng-bind-html="title">Waarde auto berekenen? Het begint op Marktplaats.</h2>
+                  <div class="mp-panel__body">
+                    <div>
+                      <div data-find-more="" class="ng-scope"><div class="find-more container">
+                        <div class="find-more__item">
+                          <div class="find-more__descr">
+                            Ook je auto verkopen?
+                          </div>
+                          <div class="searchbox-form__button">
+                            <a href="https://www.marktplaats.nl/syi/plaatsAdvertentie.html" class="mp-button" data-mp-button="">
+                              <div><span class="ng-scope">Plaats nu je advertentie</span></div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div data-footer="" class="ng-scope"><div class="footer">
+        <div class="container">
+          <div class="footer__policy">
+            <p class="footer__text">
+              Marktplaats is niet aansprakelijk voor (gevolg)schade die voortkomt uit het gebruik van
+              deze site, dan wel uit fouten of ontbrekende functionaliteiten op deze site. Copyright © 2015 eBay International
+              AG. Alle rechten voorbehouden.
+            </p>
+            <img src="assets/images/ebay-logo.png" alt="" class="pull-right">
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
 
     <script src="//www.youtube.com/player_api"></script>
     <!--[if lt IE 9]>
